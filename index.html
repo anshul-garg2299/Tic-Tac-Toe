@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-toe</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container container">
+        <!--CANVAS-->
+        <canvas id="cvs" class="hide" width="450" height="450"></canvas>
+
+        <!--WELCOME SCREEN-->
+        <div class="welcome-screen">
+            <h1 class="title-game">Tic Tac Toe</h1>
+            <h2 class="versus-text">Play Versus</h2>
+            <div class="row">
+                <div class="col-6 t-right">
+                    <button type="button" class="btn btn-primary choose-player-btn ai-btn active">COMPUTER</button>
+                </div>
+                <div class="col-6 t-left">
+                    <button type="button" class="btn btn-primary choose-player-btn friend-btn">FRIEND</button>
+                </div>
+            </div>
+
+            <h2 class="symbol-text">Symbol</h2>
+            <div class="row">
+                <div class="col-6 t-right">
+                    <button type="button" class="btn btn-primary choose-symbol-btn x-btn active">X</button>
+                </div>
+                <div class="col-6 t-left">
+                    <button type="button" class="btn btn-primary choose-symbol-btn o-btn">O</button>
+                </div>
+            </div>
+
+
+            <button type="button" class="btn btn-primary play-btn">PLAY</button>
+        </div>
+        <!--END OF WELCOME SCREEN-->
+
+        <!--GAME OVER SCREEN-->
+        <div id="game-over-screen" class="gameover hide"></div>
+        <!--END OF GAME OVER SCREEN-->
+    </div>
+
+
+    <!--SCRIPTS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="welcome-screen.js"></script>
+    <script src="game-logic.js"></script>
+
+</body></html>
